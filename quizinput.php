@@ -25,7 +25,7 @@
 	$arg8 = test_input($_POST["arg8"]);
 	$arg9 = test_input($_POST["arg9"]);
         $arg10 = test_input($_POST["arg10"]);
-         exec("/usr/lib/cgi-bin/sp2b/quizcode " . $arg1 . " " . $arg2, $output, $retc); 
+	exec("/usr/lib/cgi-bin/sp2b/quizcode " . $arg1 . " " . $arg2 . " " . $arg3 . " " . $arg4 . " " . $arg5 . " " . $arg6 . " " . $arg7 . " " . $arg8 . " " . $arg9 . " " . $arg10, $output, $retc); 
        }
        function test_input($data) {
          $data = trim($data);

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+<link rel="stylesheet" type="text/css" href="quizlayout.css">
     <title>Form Input 2</title>
   </head>
 
@@ -24,7 +25,7 @@
 	$arg8 = test_input($_POST["arg8"]);
 	$arg9 = test_input($_POST["arg9"]);
         $arg10 = test_input($_POST["arg10"]);
-         exec("/usr/lib/cgi-bin/sp2b/areaofcircle2 " . $arg1 . " " . $arg2, $output, $retc); 
+         exec("/usr/lib/cgi-bin/sp2b/quizcode " . $arg1 . " " . $arg2, $output, $retc); 
        }
        function test_input($data) {
          $data = trim($data);
@@ -35,16 +36,16 @@
     ?>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-      Arg1: <input type="text" name="arg1"><br>
-      Arg2: <input type="text" name="arg2"><br>
-	Arg3: <input type="text" name="arg3"><br>
-      Arg4: <input type="text" name="arg4"><br>
-	Arg5: <input type="text" name="arg5"><br>
-      Arg6: <input type="text" name="arg6"><br>
-	Arg7: <input type="text" name="arg7"><br>
-      Arg8: <input type="text" name="arg8"><br>
-	Arg9: <input type="text" name="arg9"><br>
-      Arg10: <input type="text" name="arg10"><br>
+      Q1 Ray Allen currently holds the record for most 3 pointers made: <input type="text" name="arg1"><br>
+      Q2 The New England Patriots have won the most NFL championships: <input type="text" name="arg2"><br>
+	Q3 Liverpool FC has the most Champions League titles in history: <input type="text" name="arg3"><br>
+      Q4 Stephen Curry holds the record for most threes in NBA history: <input type="text" name="arg4"><br>
+	Q5 LeBron James has three MVPs: <input type="text" name="arg5"><br>
+      Q6 Jayson Tatum is only 20 years old: <input type="text" name="arg6"><br>
+	Q7 Russell Westbrook shoots less than 40 percent from the field: <input type="text" name="arg7"><br>
+      Q8 Ben Simmons is a two time Rookie of the Year: <input type="text" name="arg8"><br>
+	Q9 The Clippers have made it to the Western Conference Finals: <input type="text" name="arg9"><br>
+      Q10 Eli Manning is a quarterback in the NFL: <input type="text" name="arg10"><br>
       <br>
       <input type="submit" value="Go!">
     </form>
